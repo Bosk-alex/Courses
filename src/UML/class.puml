@@ -1,0 +1,31 @@
+@startuml
+
+/'
+abstract class AbstractList
+abstract AbstractCollection
+
+AbstractCollection <|- AbstractList
+AbstractList <|-- ArrayList
+
+class ArrayList {
+Object[] elementData
+size()
+}
+
+enum TimeUnit {
+DAYS
+HOURS
+MINUTES
+}
+
+'/
+class Course {
+String name
+Date startDate
+Date endDate
+Day[] days
+int price
+int balance
+}
+
+@enduml
